@@ -1,1 +1,1 @@
-console.log('\'Allo \'Allo!');
+document.body.addEventListener('touchstart', function () {});  
