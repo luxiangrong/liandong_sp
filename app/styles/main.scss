@@ -23,6 +23,12 @@ $grid-float-breakpoint: 3000px;
 // bower:scss
 @import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
 // endbower
+@import "swipebox.scss";
+.btn-a {
+    @include button-variant(#ffffff, #2bc2fc, #2bc2fc);
+    border-radius: 0px;
+}
+
 .navbar-top {
     background-color: #2bc2fc;
     border: none;
@@ -91,7 +97,43 @@ $grid-float-breakpoint: 3000px;
     }
 }
 
+.navbar-bottom {
+    min-height: 66px;
+    text-align: center;
+    background-color: #f7f7f7;
+    a {
+        font-size: 13px;
+        color: #333333;
+        .icon-30 {
+            margin-top: 10px;
+        }
+    }
+}
+
 .banner {}
+
+.owl-theme {
+    .owl-controls {
+        margin-top: -25px;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.owl-theme .owl-controls .owl-page span {
+    display: block;
+    width: 12px;
+    height: 12px;
+    margin: 5px 7px;
+    @include opacity(0.5);
+    border-radius: 20px;
+    background: #ffffff;
+}
+
+.owl-theme .owl-controls .owl-page.active span,
+.owl-theme .owl-controls.clickable .owl-page:hover span {
+    background: #2bc2fc;
+    @include opacity(1);
+}
 
 .content {
     margin: 16px 12px;
@@ -133,7 +175,7 @@ $grid-float-breakpoint: 3000px;
             margin-top: -3px;
         }
     }
-    &.project-surround, 
+    &.project-surround,
     &.project-multi {
         h2.title {
             margin-top: 5px;
@@ -171,6 +213,402 @@ $grid-float-breakpoint: 3000px;
         .icon {
             vertical-align: middle;
             margin-top: -3px;
+        }
+    }
+    &.aboutus {
+        h1 {
+            font-weight: bold;
+            margin-top: 10px;
+            &.en {
+                font-size: 36px;
+                color: #444444;
+            }
+            &.cn {
+                font-size: 34px;
+                color: #2bc2fc;
+            }
+        }
+        .icon {
+            margin-top: 10px;
+            // transform: scale(0.5) translateX(50%) translateY(-50%);
+        }
+        p {
+            margin-top: 10px;
+            font-size: 12px;
+            color: #ff9a35;
+            font-weight: bold;
+        }
+        .contact-us {
+            p {
+                font-weight: normal;
+                @include clearfix();
+                .icon {
+                    float: left;
+                    margin-top: -3px;
+                }
+            }
+        }
+    }
+    &.content-full {
+        .container {
+            padding: 0;
+            background-color: transparent;
+            .title {
+                font-size: 15px;
+                text-align: center;
+                margin-top: 5px;
+                color: #ff9a35;
+            }
+        }
+    }
+    &.content-odd {
+        margin-top: 0px;
+        .container {
+            padding-left: 0;
+            padding-right: 0;
+            background-color: transparent;
+        }
+    }
+    &.dingzhi-carousel {
+        .container {
+            padding: 0;
+            background-color: transparent;
+        }
+        .title {
+            font-size: 15px;
+            color: #ff9a35;
+            text-align: center;
+            margin-top: 0;
+        }
+    }
+    &.dingzhi {
+        font-size: 12px;
+        .title {
+            font-size: 14px;
+            color: #2bc2fc;
+            text-align: center;
+            margin-top: 0;
+        }
+        .form-control {
+            font-size: 12px;
+            height: 30px;
+            border-radius: 0px;
+            background-color: transparent;
+            box-shadow: none;
+            -webkit-appearance: none;
+        }
+        .control-label {
+            padding-top: 7px;
+            margin-bottom: 0;
+            text-align: right;
+            padding-right: 0;
+            padding-left: 0;
+        }
+    }
+    &.yuanqu {
+        .title {
+            font-size: 15px;
+            text-align: center;
+            border-bottom: 1px solid #dcdcdc;
+            padding-bottom: 10px;
+            margin-top: 5px;
+        }
+        .tabpanel {
+            .nav-tabs {
+                border-bottom: none;
+                > li {
+                    width: 33.3333%;
+                    text-align: center;
+                    position: relative;
+                    a {
+                        color: #333333;
+                        padding: 0px;
+                        padding-top: 1px;
+                        border: none;
+                        p {
+                            margin-top: 30px;
+                            font-size: 12px;
+                        }
+                        .iconfont {
+                            height: 20px;
+                            width: 20px;
+                            position: absolute;
+                            left: 50%;
+                            margin-left: -10px;
+                            &.active {
+                                @include opacity(0);
+                            }
+                        }
+                    }
+                    &.active {
+                        a {
+                            background-color: transparent;
+                            color: #ff9a35;
+                            .iconfont {
+                                @include opacity(0);
+                                &.active {
+                                    @include opacity(1);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .tab-content {
+            min-height: 150px;
+        }
+        .fuwu {
+            font-size: 12px;
+            text-align: center;
+            .icon {
+                width: 20px;
+                height: 20px;
+                margin-top: 5px;
+            }
+            p {
+                margin-top: 5px;
+            }
+        }
+    }
+    .separate-h {
+        height: 0;
+        border-bottom: 1px solid #dcdcdc;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    &.project-detail {
+        margin-bottom: 0;
+        .container {
+            padding-top: 0px;
+        }
+        h1.project-name {
+            font-size: 15px;
+            color: #ff9a35;
+            text-align: center;
+            margin-top: 10px;
+            margin-bottom: 0px;
+        }
+        h1.title {
+            font-size: 15px;
+            text-align: center;
+            margin-top: 10px;
+        }
+        p {
+            margin-bottom: 5px;
+        }
+        &.project-jieshao {
+            .owl-carousel {
+                margin-bottom: 10px;
+            }
+        }
+        &.project-jiaotong {
+            p {
+                padding-left: 12px;
+                padding-right: 12px;
+                &.first {
+                    margin-top: 10px;
+                }
+            }
+        }
+        &.project-youshi {
+            .col-left {
+                padding-right: 5px;
+                padding-left: 5px;
+            }
+            .col-right {
+                padding-left: 5px;
+                padding-right: 5px;
+            }
+            a {
+                color: #333333;
+                text-decoration: none;
+            }
+            .media {
+                margin-top: 10px;
+                margin-bottom: 10px;
+                .media-body {
+                    h4.media-heading {
+                        font-size: 14px;
+                        margin-bottom: 2px;
+                    }
+                    p {
+                        margin-top: 0;
+                        font-size: 12px;
+                        color: #666666;
+                    }
+                }
+            }
+        }
+        &.project-yetai {
+            .media {
+                margin-top: 10px;
+                margin-bottom: 10px;
+                .media-body {
+                    h4.media-heading {
+                        font-size: 14px;
+                        margin-bottom: 2px;
+                        color: #09bbff;
+                    }
+                    p {
+                        margin-top: 0;
+                        font-size: 12px;
+                        color: #ff9a35;
+                    }
+                }
+            }
+        }
+        &.project-huxing {
+            .title {
+                font-size: 15px;
+                color: #ff9a35;
+                margin-bottom: 0;
+            }
+            .huxing-name {
+                margin-top: 10px;
+                font-size: 12px;
+                text-align: center;
+            }
+            .img-responsive {
+                margin-bottom: 10px;
+            }
+            .img-thumbnail {
+                border-radius: 0px;
+            }
+            .nav-tabs {
+                border-bottom: none;
+                margin-bottom: 10px;
+                > li {
+                    text-align: center;
+                    border-bottom: 10px solid #dcdcdc;
+                    > a {
+                        font-size: 11px;
+                        border: none;
+                        background-color: #ebebeb;
+                        color: #333333;
+                        padding-left: 10px;
+                        padding-right: 10px;
+                    }
+                    // Active state, and its :hover to override normal :hover
+                    &.active > a {
+                        &, &:hover, &:focus {
+                            color: #ffffff;
+                            background: rgb(88, 209, 255);
+                            border: none;
+                        }
+                    }
+                }
+                &.nav-huxing {
+                    > li {
+                        padding: 10px 0 5px;
+                        margin-right: 1px;
+                        > a {
+                            border: none;
+                            width: auto;
+                            background-color: transparent;
+                            color: #333333;
+                            font-size: 16px;
+                            padding-top: 0px;
+                            padding-bottom: 0px;
+                        }
+                        &.active {
+                            border-bottom-color: #09bbff;
+                        }
+                        &.active > a {
+                            &, &:hover, &:focus {
+                                color: #09BBFF;
+                                background: transparent;
+                                border: none;
+                            }
+                        }
+                        &.last {
+
+                            > a {
+                                border-right: none;
+                            }
+                            &.active > a {
+                                &:hover, &:focus {
+                                    border-right: none;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &.project-peitao {
+            .col-xs-4 {
+                text-align: center;
+                .icon-30 {
+                    width: 30px;
+                    height: 30px;
+                }
+                h4 {
+                    font-size: 13px;
+                    margin-bottom: 5px;
+                }
+                p {
+                    margin-top: 5px;
+                    font-size: 10px;
+                    color: #666666;
+                }
+            }
+            .nav-tabs {
+                border-bottom: 2px solid #dcdcdc;
+                margin-bottom: 10px;
+                > li {
+                    text-align: center;
+                    > a {
+                        font-size: 12px;
+                        border: none;
+                        background-color: #ebebeb;
+                        color: #333333;
+                        padding-left: 5px;
+                        padding-right: 5px;
+                    }
+                    // Active state, and its :hover to override normal :hover
+                    &.active > a {
+                        &, &:hover, &:focus {
+                            color: #ffffff;
+                            background: rgb(88, 209, 255);
+                            border: none;
+                        }
+                    }
+                }
+                &.nav-fuwu {
+                    border-bottom: 1px solid #C5C5C5;
+                    > li {
+                        padding: 10px 0 5px;
+                        > a {
+                            border: none;
+                            width: auto;
+                            background-color: transparent;
+                            color: #333333;
+                            font-size: 16px;
+                            padding-top: 0px;
+                            padding-bottom: 0px;
+                        }
+                        &.active {}
+                        &.active > a {
+                            &, &:hover, &:focus {
+                                color: #09BBFF;
+                                background: transparent;
+                                border: none;
+                            }
+                        }
+                        &.last {
+                            > a {
+                                border-right: none;
+                            }
+                            &.active > a {
+                                &:hover, &:focus {
+                                    border-right: none;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 }
