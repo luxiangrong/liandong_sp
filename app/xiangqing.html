@@ -52,59 +52,59 @@
                 </a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <div class="col-xs-3">
-                    <a href="">
-                        <img src="images/sprite-50-06.png" height="25" width="25" alt="">
-                        <p>在售项目</p>
-                    </a>
-                </div>
-                <div class="col-xs-3">
-                    <a href="">
-                        <img src="images/sprite-50-07.png" height="25" width="25" alt="">
-                        <p>定制服务</p>
-                    </a>
-                </div>
-                <div class="col-xs-3">
-                    <a href="">
-                        <img src="images/sprite-50-08.png" height="25" width="25" alt="">
-                        <p>园区服务</p>
-                    </a>
-                </div>
-                <div class="col-xs-3">
-                    <a href="">
-                        <img src="images/sprite-50-09.png" height="25" width="25" alt="">
-                        <p>关于我们</p>
-                    </a>
-                </div>
-            </div>
             <!-- /.navbar-collapse -->
         </div>
         <!-- /.container-fluid -->
     </nav>
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <div class="col-xs-3">
+            <a href="">
+                <img src="images/sprite-50-06.png" height="25" width="25" alt="">
+                <p>在售项目</p>
+            </a>
+        </div>
+        <div class="col-xs-3">
+            <a href="">
+                <img src="images/sprite-50-07.png" height="25" width="25" alt="">
+                <p>定制服务</p>
+            </a>
+        </div>
+        <div class="col-xs-3">
+            <a href="">
+                <img src="images/sprite-50-08.png" height="25" width="25" alt="">
+                <p>园区服务</p>
+            </a>
+        </div>
+        <div class="col-xs-3">
+            <a href="">
+                <img src="images/sprite-50-09.png" height="25" width="25" alt="">
+                <p>关于我们</p>
+            </a>
+        </div>
+    </div>
     <nav class="navbar navbar-default navbar-bottom navbar-fixed-bottom">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-xs-3">
-                    <a href="">
+                    <a href="#section-1">
                         <img src="images/sprite-60-12.png" class="icon icon-30" height="30" width="30" alt="">
                         <p>项目介绍</p>
                     </a>
                 </div>
                 <div class="col-xs-3">
-                    <a href="">
+                    <a href="#section-2">
                         <img src="images/sprite-60-13.png" class="icon icon-30" height="30" width="30" alt="">
                         <p>区位交通</p>
                     </a>
                 </div>
                 <div class="col-xs-3">
-                    <a href="">
+                    <a href="#section-3">
                         <img src="images/sprite-60-14.png" class="icon icon-30" height="30" width="30" alt="">
                         <p>产品业态</p>
                     </a>
                 </div>
                 <div class="col-xs-3">
-                    <a href="">
+                    <a href="#section-4">
                         <img src="images/sprite-60-15.png" class="icon icon-30" height="30" width="30" alt="">
                         <p>园区服务</p>
                     </a>
@@ -119,7 +119,7 @@
     </section>
     <section class="content project-detail project-jieshao">
         <div class="container">
-            <h1 class="title">项目介绍</h1>
+            <h1 class="title" id="section-1">项目介绍</h1>
             <div class="owl-carousel">
                 <div class="item">
                     <img src="images/pic07.jpg" alt="" class="img-responsive">
@@ -142,13 +142,13 @@
     </section>
     <section class="content content-odd project-detail project-jiaotong">
         <div class="container">
-            <h1 class="title">区位交通</h1>
+            <h1 class="title" id="section-2">区位交通</h1>
             <img src="images/pic08.jpg" alt="" class="img-responsive">
             <p class="first">本项目位于金山工业区核心位置，紧靠工业园区中心位置，周边企业入住率高，配套完善，交通便捷。海市金山区作为长三角区域的核心城市之一，处于沪、杭、周山群岛经济区域中心和长三角都市圈枢纽地带。</p>
         </div>
     </section>
     <section class="content project-detail project-youshi">
-        <div class="container"  id="accordion">
+        <div class="container" id="accordion">
             <h1 class="title">项目优势</h1>
             <div class="separate-h"></div>
             <div class="row">
@@ -223,7 +223,7 @@
     </section>
     <section class="content project-detail project-yetai">
         <div class="container">
-            <h1 class="title">产品业态</h1>
+            <h1 class="title" id="section-3">产品业态</h1>
             <div class="separate-h"></div>
             <div class="media">
                 <div class="media-left">
@@ -312,7 +312,7 @@
     </section>
     <section class="content project-detail project-peitao">
         <div class="container">
-            <h1 class="title">服务配套</h1>
+            <h1 class="title" id="section-4">服务配套</h1>
             <div class="separate-h"></div>
             <div class="row">
                 <div class="col-xs-4">
@@ -361,6 +361,8 @@
     <script src="bower_components/jquery/dist/jquery.js"></script>
     <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap.js"></script>
     <script src="bower_components/OwlCarousel/owl-carousel/owl.carousel.js"></script>
+    <script src="bower_components/velocity/velocity.js"></script>
+    <script src="bower_components/velocity/velocity.ui.js"></script>
     <script src="bower_components/swipebox/src/js/jquery.swipebox.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
@@ -389,7 +391,15 @@
             //     closeEffect : 'none'
             // });
 
-            $( '.swipebox' ).swipebox();
+            $('.swipebox').swipebox();
+
+            $('.navbar-bottom a').on('click', function(e) {
+                e.preventDefault();
+                var target = $(this).attr('href');
+                $(target).velocity('scroll', {
+                    offset: -10
+                });
+            });
 
         });
     })(jQuery);

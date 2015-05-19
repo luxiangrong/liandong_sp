@@ -97,6 +97,34 @@ $grid-float-breakpoint: 3000px;
     }
 }
 
+.navbar-collapse {
+    background-color: #ffffff;
+    border: none;
+    text-align: center;
+    height: 56px;
+    padding-top: 7px;
+    a {
+        color: inherit;
+        font-size: 13px;
+        text-decoration: none;
+        display: block;
+        white-space: nowrap;
+        img {
+            display: block;
+            margin: 0 auto;
+        }
+        p {
+            margin-top: 5px;
+            margin: 0;
+        }
+        &:hover,
+        &:active,
+        &:focus {
+            @include opacity(0.8);
+        }
+    }
+}
+
 .navbar-bottom {
     min-height: 66px;
     text-align: center;
@@ -104,6 +132,7 @@ $grid-float-breakpoint: 3000px;
     a {
         font-size: 13px;
         color: #333333;
+        text-decoration: none;
         .icon-30 {
             margin-top: 10px;
         }
@@ -563,8 +592,9 @@ $grid-float-breakpoint: 3000px;
                         border: none;
                         background-color: #ebebeb;
                         color: #333333;
-                        padding-left: 5px;
-                        padding-right: 5px;
+                        padding-left: 10px;
+                        padding-right: 10px;
+
                     }
                     // Active state, and its :hover to override normal :hover
                     &.active > a {
@@ -587,6 +617,7 @@ $grid-float-breakpoint: 3000px;
                             font-size: 16px;
                             padding-top: 0px;
                             padding-bottom: 0px;
+                            border-right: 1px solid #C5C5C5;
                         }
                         &.active {}
                         &.active > a {
@@ -594,6 +625,7 @@ $grid-float-breakpoint: 3000px;
                                 color: #09BBFF;
                                 background: transparent;
                                 border: none;
+                                border-right: 1px solid #C5C5C5;
                             }
                         }
                         &.last {
