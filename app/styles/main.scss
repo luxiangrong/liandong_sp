@@ -68,6 +68,9 @@ $grid-float-breakpoint: 3000px;
             display: inline;
         }
     }
+    .navbar-text {
+        color: #ffffff;
+    }
     .navbar-collapse {
         background-color: #4c4c4c;
         border: none;
@@ -101,7 +104,7 @@ $grid-float-breakpoint: 3000px;
     background-color: #ffffff;
     border: none;
     text-align: center;
-    height: 56px;
+    height: 46px;
     padding-top: 7px;
     a {
         color: inherit;
@@ -197,7 +200,7 @@ $grid-float-breakpoint: 3000px;
             }
         }
         .address {
-            font-size: 10px;
+            font-size: 12px;
         }
         .icon {
             vertical-align: middle;
@@ -237,7 +240,7 @@ $grid-float-breakpoint: 3000px;
             }
         }
         .address {
-            font-size: 10px;
+            font-size: 12px;
         }
         .icon {
             vertical-align: middle;
@@ -578,7 +581,7 @@ $grid-float-breakpoint: 3000px;
                 }
                 p {
                     margin-top: 5px;
-                    font-size: 10px;
+                    font-size: 12px;
                     color: #666666;
                 }
             }
