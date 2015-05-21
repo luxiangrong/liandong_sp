@@ -258,6 +258,10 @@ $grid-float-breakpoint: 3000px;
         }
         .address {
             font-size: 12px;
+            span {
+                margin-left: 25px;
+                display: block;
+            }
         }
         .icon {
             vertical-align: middle;
