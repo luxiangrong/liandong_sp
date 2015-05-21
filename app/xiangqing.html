@@ -25,11 +25,11 @@
     <!-- endbuild -->
 </head>
 
-<body>
+<body class="pb70 pt50">
     <!--[if lt IE 10]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-    <nav class="navbar navbar-default navbar-top">
+    <nav class="navbar navbar-default navbar-top navbar-fixed-top">
         <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
@@ -139,7 +139,7 @@
             <p>4、东北区域可进行地图查看项目，项目可在地图上选择，类似多项目地图功能。可自由勾选是否显示地图</p>
         </div>
     </section>
-    <section class="content content-odd project-detail project-jiaotong">
+    <section class="content project-detail project-jiaotong">
         <div class="container">
             <h1 class="title" id="section-2">区位交通</h1>
             <img src="images/pic08.jpg" alt="" class="img-responsive">
@@ -265,13 +265,18 @@
     <section class="content project-detail project-huxing">
         <div class="container">
             <h1 class="title">户型介绍</h1>
-            <h2 class="huxing-name">M户型</h2>
+            <div role="tabpanel" class="tabpanel">
+                <ul class="nav nav-tabs nav-huxing">
+                    <li role="presentation" class="active"><a href="#huxing-1" role="tab" data-toggle="tab">M户型</a></li>
+                    <li role="presentation"><a href="#huxing-2" role="tab" data-toggle="tab">L户型</a></li>
+                    <li role="presentation" class=""><a href="#huxing-3" role="tab" data-toggle="tab">M户型</a></li>
+                    <li role="presentation" class=""><a href="#huxing-4" role="tab" data-toggle="tab">I户型</a></li>
+                </ul>
+            </div>
             <div class="row">
                 <div class="tab-content">
                     <div role="tabpanel" class="tab-pane active" id="huxing-1">
-                        <a rel="gallery-1" href="images/pic10.jpg" class="swipebox">
                             <img src="images/pic10.jpg" alt="" class="img-responsive">
-                        </a>
                         <a rel="gallery-2" href="images/pic11.jpg" class="swipebox">
                             <img src="images/pic11.jpg" alt="image" class="img-responsive img-thumbnail">
                         </a>
@@ -299,14 +304,7 @@
                     </div>
                 </div>
             </div>
-            <div role="tabpanel" class="tabpanel">
-                <ul class="nav nav-tabs nav-huxing">
-                    <li role="presentation" class="active"><a href="#huxing-1" role="tab" data-toggle="tab">M户型</a></li>
-                    <li role="presentation"><a href="#huxing-2" role="tab" data-toggle="tab">L户型</a></li>
-                    <li role="presentation" class=""><a href="#huxing-3" role="tab" data-toggle="tab">M户型</a></li>
-                    <li role="presentation" class=""><a href="#huxing-4" role="tab" data-toggle="tab">I户型</a></li>
-                </ul>
-            </div>
+            
         </div>
     </section>
     <section class="content project-detail project-peitao">

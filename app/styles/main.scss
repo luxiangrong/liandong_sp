@@ -24,6 +24,14 @@ $grid-float-breakpoint: 3000px;
 @import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
 // endbower
 @import "swipebox.scss";
+
+.pb70 {
+    padding-bottom: 70px;
+}
+.pt50 {
+    padding-top: 50px;
+}
+
 .btn-a {
     @include button-variant(#ffffff, #2bc2fc, #2bc2fc);
     border-radius: 0px;
@@ -70,6 +78,10 @@ $grid-float-breakpoint: 3000px;
     }
     .navbar-text {
         color: #ffffff;
+        margin-top: 0;
+        margin-bottom: 0;
+        height: 50px;
+        line-height: 50px;
     }
     .navbar-collapse {
         background-color: #4c4c4c;
@@ -173,9 +185,14 @@ $grid-float-breakpoint: 3000px;
         padding-top: 12px;
         padding-bottom: 12px;
         background-color: #f5f5f5;
-        .city-switch {
+        &.city-switch {
+            padding-bottom: 5px;
+            padding-top: 5px;
             .form-control {
                 border-color: 1px solid #2bc2fc;
+                height: 25px;
+                padding-bottom: 2px;
+                padding-top: 2px;
             }
         }
     }
@@ -286,10 +303,10 @@ $grid-float-breakpoint: 3000px;
             padding: 0;
             background-color: transparent;
             .title {
-                font-size: 15px;
+                font-size: 18px; 
                 text-align: center;
                 margin-top: 5px;
-                color: #ff9a35;
+                color: #333333;
             }
         }
     }
@@ -308,7 +325,6 @@ $grid-float-breakpoint: 3000px;
         }
         .title {
             font-size: 15px;
-            color: #ff9a35;
             text-align: center;
             margin-top: 0;
         }
@@ -317,9 +333,9 @@ $grid-float-breakpoint: 3000px;
         font-size: 12px;
         .title {
             font-size: 14px;
-            color: #2bc2fc;
             text-align: center;
             margin-top: 0;
+            color: #2bc2fc;
         }
         .form-control {
             font-size: 12px;
@@ -335,6 +351,13 @@ $grid-float-breakpoint: 3000px;
             text-align: right;
             padding-right: 0;
             padding-left: 0;
+        }
+        .btn-wrap {
+            text-align: center;
+            .btn {
+                padding-left: 50px;
+                padding-right: 50px;
+            }
         }
     }
     &.yuanqu {
@@ -415,8 +438,8 @@ $grid-float-breakpoint: 3000px;
             padding-top: 0px;
         }
         h1.project-name {
-            font-size: 15px;
-            color: #ff9a35;
+            font-size: 18px;
+            color: #333333;
             text-align: center;
             margin-top: 10px;
             margin-bottom: 0px;
@@ -492,8 +515,7 @@ $grid-float-breakpoint: 3000px;
         }
         &.project-huxing {
             .title {
-                font-size: 15px;
-                color: #ff9a35;
+                font-size: 16px;
                 margin-bottom: 0;
             }
             .huxing-name {
