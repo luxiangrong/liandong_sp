@@ -403,7 +403,6 @@
                 var target = $(this).attr('href');
                 var parent = $(this).attr('data-parent');
                 $(parent).find('.collapse:not(' + target + ')').velocity('slideUp');
-                setTimeout(function() {
                     $(parent).find(target).velocity('slideDown', {
                         queue: false
                     });
