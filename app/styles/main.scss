@@ -350,6 +350,9 @@ $grid-float-breakpoint: 3000px;
             box-shadow: none;
             -webkit-appearance: none;
         }
+        textarea.form-control {
+            height: auto;
+        }
         .control-label {
             padding-top: 7px;
             margin-bottom: 0;
