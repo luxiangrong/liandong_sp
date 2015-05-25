@@ -403,11 +403,11 @@
                 var target = $(this).attr('href');
                 var parent = $(this).attr('data-parent');
                 $(parent).find('.collapse:not(' + target + ')').velocity('slideUp');
-                    $(parent).find(target).velocity('slideDown', {
-                        queue: false
-                    });
-                }, 1);
-
+                if($(parent).find(target).is(':hidden')) {
+                    $(parent).find(target).velocity('slideDown');
+                } else {
+                    $(parent).find(target).velocity('slideUp');
+                }
             });
 
         });
