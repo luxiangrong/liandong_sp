@@ -37,6 +37,10 @@ $grid-float-breakpoint: 3000px;
     border-radius: 0px;
 }
 
+.btn-b {
+    @include button-variant(#333333, #ffffff, #2bc2fc);
+}
+
 .navbar-top {
     background-color: #2bc2fc;
     border: none;
@@ -194,6 +198,65 @@ $grid-float-breakpoint: 3000px;
                 height: 25px;
                 padding-bottom: 2px;
                 padding-top: 2px;
+            }
+            .dropdown-menu {
+                width: 50%;
+                > li {
+                }
+                .dropdown-submenu {
+                    width: 100%;
+                }
+            }
+            .city-picker-wraper {
+                position: relative;
+                display: none;
+                .col-xs-6 {
+                    padding: 0;
+                }
+                .city-picker {
+                    position: absolute;
+                    width: 100%;
+                    top: 5px;
+                    background-color: #f5f5f5;
+                    border: 1px solid #2bc2fc;
+                    z-index: 999;
+                    margin-left: 0px;
+                    margin-right: 0px;
+                    .nav {
+                        > li {
+                            > a {
+                                color: inherit;
+                                cursor: pointer;
+                            }
+                            &.active {
+                                > a {
+                                    background-color: #fff;
+                                    color: #2bc2fc;
+                                }
+                            }
+                        }
+                        .cities {
+                            display: none;
+                        }
+                        &.nav-city {
+                            height: 234px;
+                            overflow-y: auto;
+                            background-color: #fff;
+                            > li {
+                                > a {
+                                    color: inherit;
+                                    background-color: #fff;
+                                }
+                                &.active {
+                                    > a {
+                                        color: #2bc2fc;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                }
             }
         }
     }

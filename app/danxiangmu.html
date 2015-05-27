@@ -40,7 +40,6 @@
                     <img src="images/logo2.png" height="" width="180" />
                 </p>
             </div>
-            
         </div>
     </nav>
     <section class="banner">
@@ -89,21 +88,100 @@
     <section class="content">
         <div class="container city-switch">
             <div class="row ">
-                <div class="col-xs-4">
-                    <select name="" id="" class="form-control input-sm">
-                        <option value="">华北</option>
-                        <option value="">华东</option>
-                        <option value="">东北</option>
-                        <option value="">华南</option>
-                    </select>
-                </div>
-                <div class="col-xs-4">
-                    <select name="" id="" class="form-control input-sm">
-                        <option value="">北京</option>
-                        <option value="">天津</option>
-                        <option value="">吉林</option>
-                        <option value="">黑龙江</option>
-                    </select>
+                <div class="col-xs-12">
+                    <button class="btn btn-b" data-toggle="region" type="button">
+                        <span class="region">华北区</span>
+                        <span class="caret"></span>
+                    </button>
+                    <button class="btn btn-b" data-toggle="city" type="button">
+                        <span class="city">北京</span>
+                        <span class="caret"></span>
+                    </button>
+                    <div class="city-picker-wraper">
+                        <div class="row city-picker">
+                            <div class="col-xs-6">
+                                <ul class="nav nav-region">
+                                    <li>
+                                        <a data-region="华北区">华北区</a>
+                                        <ul class="cities">
+                                            <li><a data-city="北京">北京</a></li>
+                                            <li><a data-city="天津">天津</a></li>
+                                            <li><a data-city="河北">河北</a></li>
+                                            <li><a data-city="山西">山西</a></li>
+                                            <li><a data-city="内蒙古">内蒙古</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a data-region="华东区">华东区</a>
+                                        <ul class="cities">
+                                            <li><a data-city="上海">上海</a></li>
+                                            <li><a data-city="江苏">江苏</a></li>
+                                            <li><a data-city="浙江">浙江</a></li>
+                                            <li><a data-city="安徽">安徽</a></li>
+                                            <li><a data-city="福建">福建</a></li>
+                                            <li><a data-city="江西">江西</a></li>
+                                            <li><a data-city="山东">山东</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a data-region="东北区">东北区</a>
+                                        <ul class="cities">
+                                            <li><a data-city="辽宁">辽宁</a></li>
+                                            <li><a data-city="吉林">吉林</a></li>
+                                            <li><a data-city="黑龙江">黑龙江</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a data-region="华中区">华中区</a>
+                                        <ul class="cities">
+                                            <li><a data-city="河南">河南</a></li>
+                                            <li><a data-city="湖北">湖北</a></li>
+                                            <li><a data-city="湖南">湖南</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a data-region="华南区">华南区</a>
+                                        <ul class="cities">
+                                            <li><a data-city="广东">广东</a></li>
+                                            <li><a data-city="广西">广西</a></li>
+                                            <li><a data-city="海南">海南</a></li>
+                                            <li><a data-city="香港">香港</a></li>
+                                            <li><a data-city="澳门">澳门</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a data-region="西南区">西南区</a>
+                                        <ul class="cities">
+                                            <li><a data-city="重庆">重庆</a></li>
+                                            <li><a data-city="四川">四川</a></li>
+                                            <li><a data-city="云南">云南</a></li>
+                                            <li><a data-city="贵州">贵州</a></li>
+                                            <li><a data-city="西藏">西藏</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-xs-6">
+                                <ul class="nav nav-city">
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- <ul class="dropdown-menu" role="menu">
+                            <li class="dropdown-submenu">
+                                <a data-toggle="dropdown">华北区</a>
+                                <ul class="dropdown-menu">
+                                    <li class="dropdown-header">请选择城市</li>
+                                    <li class="divider"></li>
+                                    <li><a>北京</a></li>
+                                    <li><a>石家庄</a></li>
+                                    <li><a>天津</a></li>
+                                    <li><a>河北</a></li>
+                                </ul>
+                            </li>
+                            <li><a tabindex="0">华东区</a></li>
+                            <li><a tabindex="0">华南区</a></li>
+                        </ul> -->
+                    </div>
                 </div>
             </div>
         </div>
@@ -115,8 +193,8 @@
                     <h2 class="title">在售项目 - 北京</h2>
                     <img src="images/pic01.jpg" alt="" class="img-responsive">
                     <h3 class="product-name">
-                		联东U谷·北京金桥产业园
-                	</h3>
+                        联东U谷·北京金桥产业园
+                    </h3>
                     <div class="tel">
                         <img src="images/sprite-50-10.png" alt="" height="25" width="25" class="icon icon-25"><a href="tel:400-631-7160">400-631-7160</a>
                     </div>
@@ -129,7 +207,7 @@
     </section>
     <section class="content project-surround">
         <div class="container">
-        	<h2 class="title">周边项目</h2>
+            <h2 class="title">周边项目</h2>
             <div class="media">
                 <div class="media-left">
                     <a href="#">
@@ -138,8 +216,8 @@
                 </div>
                 <div class="media-body">
                     <h3 class="product-name">
-                		天津北方耀谷北方耀谷
-                	</h3>
+                        天津北方耀谷北方耀谷
+                    </h3>
                     <div class="tel">
                         <img src="images/sprite-50-10.png" alt="" height="25" width="25" class="icon icon-25"><a href="tel:400-631-7160">400-631-7160</a>
                     </div>
@@ -156,8 +234,8 @@
                 </div>
                 <div class="media-body">
                     <h3 class="product-name">
-                		天津北方耀谷北方耀谷
-                	</h3>
+                        天津北方耀谷北方耀谷
+                    </h3>
                     <div class="tel">
                         <img src="images/sprite-50-10.png" alt="" height="25" width="25" class="icon icon-25"><a href="tel:400-631-7160">400-631-7160</a>
                     </div>
@@ -174,8 +252,8 @@
                 </div>
                 <div class="media-body">
                     <h3 class="product-name">
-                		天津北方耀谷北方耀谷
-                	</h3>
+                        天津北方耀谷北方耀谷
+                    </h3>
                     <div class="tel">
                         <img src="images/sprite-50-10.png" alt="" height="25" width="25" class="icon icon-25"><a href="tel:400-631-7160">400-631-7160</a>
                     </div>
@@ -200,7 +278,7 @@
     <script src="scripts/main.js"></script>
     <!-- endbuild -->
     <script>
-        (function($) {
+    (function($) {
         $(document).ready(function() {
             $(".owl-carousel").owlCarousel({
                 navigation: false, // Show next and prev buttons
@@ -209,6 +287,39 @@
                 singleItem: true,
                 responsive: true,
                 lazyFollow: false
+            });
+
+            $('.nav-region > li > a').on('click', function(e){
+                e.preventDefault();
+                $(this).closest('.nav-region').find('> li').removeClass('active');
+                $(this).parent().addClass('active');
+
+                $(this).closest('.city-picker').find('.nav-city').html($(this).next().html());
+            });
+
+            $('.city-picker').on('click', '.nav-city > li > a', function(e){
+                e.preventDefault();
+                $(this).closest('.nav-city').find('> li').removeClass('active');
+                $(this).parent().addClass('active');
+            });
+
+            $('[data-toggle="region"]').on('click', function(e){
+                e.preventDefault();
+
+
+                var region = $(this).find('.region').text();
+                $(this).nextAll('.city-picker-wraper').toggle();
+                var cityPicker = $(this).nextAll('.city-picker-wraper').find('.city-picker');
+
+                cityPicker.find('.nav-region, .nav-city').find('li').removeClass('active');
+
+                cityPicker.find('[data-region="' + region + '"]').parent().addClass('active');
+
+                cityPicker.find('.nav-city').html(cityPicker.find('[data-region="' + region + '"]').next().html());
+
+                var city = $(this).next().find('.city').text();
+                console.log(city);
+                cityPicker.find('.nav-city [data-city="' + city + '"]').parent().addClass('active');
             });
         });
     })(jQuery);
