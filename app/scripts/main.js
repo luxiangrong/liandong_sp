@@ -10,7 +10,7 @@
         });
 
         $('.city-picker').on('click', '.nav-city > li > a', function(e) {
-            e.preventDefault();
+            // e.preventDefault();
             $(this).closest('.nav-city').find('> li').removeClass('active');
             $(this).parent().addClass('active');
         });
