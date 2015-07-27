@@ -396,6 +396,22 @@ $grid-float-breakpoint: 3000px;
             text-align: center;
             margin-top: 0;
         }
+        .with-title {
+            .owl-item {
+                p {
+                    text-align: center;
+                    margin-top: 10px;
+                    margin-bottom: 0px;
+                }
+            }
+            .owl-controls {
+                position: absolute;
+                left: 0;
+                right: 0;
+                bottom: 25px;
+                width: 100%;
+            }
+        }
     }
     &.dingzhi {
         font-size: 12px;
@@ -504,6 +520,20 @@ $grid-float-breakpoint: 3000px;
                 img.img-responsive {
                     width: 100%;
                 }
+                p {
+                    text-align: center;
+                    margin-bottom: 0px;
+                    margin-top: 10px;
+                }
+            }
+        }
+        .with-title {
+            .owl-controls {
+                position: absolute;
+                left: 0;
+                right: 0;
+                bottom: 25px;
+                width: 100%;
             }
         }
     }
