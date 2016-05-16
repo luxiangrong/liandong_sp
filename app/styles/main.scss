@@ -375,6 +375,9 @@ $grid-float-breakpoint: 3000px;
                 text-align: center;
                 margin-top: 5px;
                 color: #333333;
+                &.title-yuanqu {
+                    color: #ff7a04;
+                }
             }
         }
     }
@@ -443,13 +446,13 @@ $grid-float-breakpoint: 3000px;
             }
         }
     }
+
     &.yuanqu {
         .title {
             font-size: 15px;
             text-align: center;
             border-bottom: 1px solid #dcdcdc;
             padding-bottom: 10px;
-            margin-top: 5px;
         }
         .tabpanel {
             .nav-tabs {
@@ -468,11 +471,11 @@ $grid-float-breakpoint: 3000px;
                             font-size: 12px;
                         }
                         .iconfont {
-                            height: 20px;
-                            width: 20px;
+                            height: 24px;
+                            width: 24px;
                             position: absolute;
                             left: 50%;
-                            margin-left: -10px;
+                            margin-left: -12px;
                             &.active {
                                 @include opacity(0);
                             }
@@ -495,6 +498,57 @@ $grid-float-breakpoint: 3000px;
         }
         .tab-content {
             min-height: 150px;
+            .row {
+                margin-left: -5px;
+                margin-right: -5px;
+            }
+            .btn-more {
+                @include button-variant(#ffffff, #ff9a35, #ff9a35);
+            }
+            .item {
+                padding: 5px;
+                margin-bottom: 10px;
+                a {
+                    color: #333;
+                }
+                .img-wrap {
+                    position: relative;
+                    .hot {
+                        position: absolute;
+                        right: 0px;
+                        bottom: 0px;
+                        width: 25px;
+                        height: 25px;
+                    }
+                }
+                .title {
+                    font-size: 12px;
+                    padding: 0;
+                    margin: 0;
+                    margin: 5px 0;
+                    border-bottom: none;
+                    font-weight: normal;
+                    text-align: left;
+                    .tag {
+                        display: inline-block;
+                        padding: 0px 3px;
+                        color: #fff;
+                        background-color: #ff7a04;
+                        border-radius: 3px;
+                        margin-right: 3px;
+                    }
+                }
+                .date,
+                .location {
+                    font-size: 10px;
+                    color: #969696;
+                    img {
+                        @include opacity(0.3);
+                        width: 9px;
+                        margin-right: 5px;
+                    }
+                }
+            }
         }
         .fuwu {
             font-size: 12px;
