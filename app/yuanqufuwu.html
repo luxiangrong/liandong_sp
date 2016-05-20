@@ -85,18 +85,34 @@
         <div class="container">
             <h1 class="title title-yuanqu">园区服务</h1>
             <div class="row">
-                <div class="owl-carousel">
+                <div class="owl-carousel owl-yuanqufuwu">
                     <div class="item">
                         <img src="images/pic03.jpg" alt="" class="img-responsive">
+                        <div class="mask">
+                            这个广告真是好<br/>
+                            这个广告真是好
+                        </div>
                     </div>
                     <div class="item">
                         <img src="images/pic03.jpg" alt="" class="img-responsive">
+                        <div class="mask">
+                            这个广告真是好<br/>
+                            这个广告真是好
+                        </div>
                     </div>
                     <div class="item">
                         <img src="images/pic03.jpg" alt="" class="img-responsive">
+                        <div class="mask">
+                            这个广告真是好<br/>
+                            这个广告真是好
+                        </div>
                     </div>
                     <div class="item">
                         <img src="images/pic03.jpg" alt="" class="img-responsive">
+                        <div class="mask">
+                            这个广告真是好<br/>
+                            这个广告真是好
+                        </div>
                     </div>
                 </div>
             </div>
@@ -938,7 +954,7 @@
                 $button.text('加载中');
                 //此处模拟后台请求返回数据
                 $.get('yuanquwufu-data.html').done(function(data){
-                    $button.closest('.row').prepend(data);
+                    $button.closest('.row').before(data);
                     $button.text(text);
                 }).fail(function(){
                     $button.text(text);
